@@ -3,7 +3,7 @@
 import { cn } from '@/utils/cn'
 import { BackgroundGradientAnimation } from './BackgroundGradientAnimation'
 import { GridGlob } from './GridGlob'
-import Lottie from 'react-lottie'
+import { FcCheckmark } from 'react-icons/fc'
 import { useState } from 'react'
 import animationData from '@/data/confetti.json'
 import MagicButton from './MagicButton'
@@ -59,7 +59,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        'row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-white/[0.1] justify-between flex flex-col space-y-4',
+        'row-span-1 font-sans relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-white/[0.1] justify-between flex flex-col space-y-4',
         className
       )}
       style={{ background: 'rgb(4,7,29)', backgroundColor: 'gradient...' }}
@@ -105,7 +105,7 @@ export const BentoGridItem = ({
       {id === 2 && <GridGlob />}
       {id === 3 && (
         <div className=" flex gap-2 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-          <div className=" flex flex-col relative bottom-9 gap-5 lg:gap-5">
+          <div className=" flex flex-col relative bottom-9 gap-5 lg:gap-5 ">
             <span className=" py-5 px-3 rounded-lg text-center bg-[#10132e]" />
             {['React.js', 'Next.js', 'TypeScript'].map((item) => (
               <span
@@ -141,13 +141,15 @@ export const BentoGridItem = ({
               }}
             /> */}
           </div>
-          <MagicButton
-            title={copied ? 'Email copied' : 'Copy my Email'}
-            icon={<IoCopyOutline />}
-            position="left"
-            otherClasses=" bg-[#161a31]"
-            handleClick={handleCopy}
-          />
+          <div className=" relative left-16 bottom-5 lg:left-28 lg:bottom-10 w-[50%]">
+            <MagicButton
+              title={copied ? 'Email copied' : 'Copy my Email'}
+              icon={copied ? <FcCheckmark /> : <IoCopyOutline />}
+              position="left"
+              otherClasses=" bg-[#161a31]"
+              handleClick={handleCopy}
+            />
+          </div>
         </div>
       )}
     </div>
