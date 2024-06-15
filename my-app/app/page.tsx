@@ -1,3 +1,4 @@
+import Experience from '@/components/Experience'
 import Grid from '@/components/Grid'
 import Hero from '@/components/Hero'
 import RecentProject from '@/components/RecentProject'
@@ -9,11 +10,16 @@ export default function Home() {
     <main className=" relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className=" max-w-7xl w-full">
         <FloatingNav
-          navItems={[{ name: 'Home', link: '/', icon: <FaHome /> }]}
+          navItems={[
+            { name: 'Home', link: '/', icon: <FaHome /> },
+            { name: 'Projects', link: '#projects' },
+            { name: 'Contact', link: '#contact' },
+          ]}
         />
         <Hero />
         <Grid />
         <RecentProject />
+        <Experience />
       </div>
     </main>
   )
