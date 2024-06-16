@@ -1,4 +1,4 @@
-import Approche from '@/components/Approche'
+import { Approche } from '@/components/Approche'
 import Experience from '@/components/Experience'
 import Grid from '@/components/Grid'
 import Hero from '@/components/Hero'
