@@ -5,7 +5,7 @@ import { TextGenerateEffect } from './ui/TextGenerateEffect'
 
 const Hero = () => {
   return (
-    <div className=" pb-20 pt-36 font-sans">
+    <div className=" pb-20 pt-36 font-sans" id="home">
       <video
         autoPlay
         muted
