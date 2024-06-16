@@ -3,8 +3,6 @@ import React from 'react'
 
 import { AnimatePresence, motion } from 'framer-motion'
 import { CanvasRevealEffect } from '@/components/ui/CanvasRevealEffect'
-import { Button } from './ui/MovingBorder'
-import MagicButton from './ui/MagicButton'
 
 export const Approche = () => {
   return (
@@ -15,15 +13,19 @@ export const Approche = () => {
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-transparent w-full gap-4 mx-auto px-8">
         <Card
           title="Planning & Strategy"
-          icon={<AceternityIcon />}
-          order="Phase 1"
+          icon={<AceternityIcon order="Phase 1" />}
+          desc="We'll collaborate to map out your website's goals, target audience , and key functionalites. we'll discuss things like site structure, navigation, and content requirements"
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Nisha is Munni" icon={<AceternityIcon />}>
+        <Card
+          title="Development & Progress Update"
+          icon={<AceternityIcon order="Phase 2" />}
+          desc="One we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way"
+        >
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -36,7 +38,11 @@ export const Approche = () => {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card title="Munni is Aditi" icon={<AceternityIcon />}>
+        <Card
+          title="Development & Launch"
+          icon={<AceternityIcon order="Phase 3" />}
+          desc="This is where the magic happens! Based on the approved design, i'll translate everything into functional code, building your website from the ground up."
+        >
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
@@ -51,9 +57,11 @@ export const Approche = () => {
 const Card = ({
   title,
   icon,
+  desc,
   children,
 }: {
   title: string
+  desc: string
   icon: React.ReactNode
   children?: React.ReactNode
 }) => {
@@ -85,8 +93,11 @@ const Card = ({
         <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
           {icon}
         </div>
-        <h2 className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h2 className="dark:text-white text-3xl text-center opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
+        </h2>
+        <h2 className="dark:text-white text-xl text-center opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4 group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+          {desc}
         </h2>
       </div>
     </div>
@@ -96,11 +107,9 @@ const Card = ({
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
     <div>
-      // Button code
-      <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-        Shimmer
+      <button className="inline-flex absolute right-28 top-20 h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+        {order}
       </button>
-      // tailwind.config.js code
     </div>
   )
 }
