@@ -22,7 +22,7 @@ export const Approche = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Progress Update"
           icon={<AceternityIcon order="Phase 2" />}
           desc="One we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way"
         >
@@ -106,8 +106,8 @@ const Card = ({
 
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
-    <div>
-      <button className="inline-flex absolute right-28 top-20 h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+    <div className=" flex justify-center items-center">
+      <button className="inline-flex absolute text-xl right-28 top-20 h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
         {order}
       </button>
     </div>

@@ -1,5 +1,6 @@
 import { Approche } from '@/components/Approche'
 import Experience from '@/components/Experience'
+import Footer from '@/components/Footer'
 import Grid from '@/components/Grid'
 import Hero from '@/components/Hero'
 import RecentProject from '@/components/RecentProject'
@@ -22,6 +23,7 @@ export default function Home() {
         <RecentProject />
         <Experience />
         <Approche />
+        <Footer />
       </div>
     </main>
   )
