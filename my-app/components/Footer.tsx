@@ -33,14 +33,17 @@ const Footer = () => {
         <p className="md:text-base text-sm md:font-normal font-light  ">
           Copyright © 2024 Yusuf
         </p>
-        <div className=" flex gap-2 items-center md:gap-3 gap-6 ">
+        <div className=" flex gap-2 items-center md:gap-3 ">
           {socialMedia.map((profile) => (
-            <div
-              key={profile.id}
-              className=" w-10 h-10 lg:mx-4 mt-4 cursor-pointer flex justify-center items-center"
-            >
-              <img src={profile.img} alt={profile.img} width={30} height={30} />
-            </div>
+            <a href={profile.link} key={profile.id} className=" cursor-pointer">
+              <img
+                src={profile.img}
+                alt={profile.img}
+                className=" cursor-pointer"
+                width={30}
+                height={30}
+              />
+            </a>
           ))}
         </div>
       </div>

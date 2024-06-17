@@ -198,13 +198,16 @@ export const socialMedia = [
   {
     id: 1,
     img: '/git.svg',
+    link: 'https://github.com/MorsiYoucef/',
   },
   {
     id: 2,
     img: '/twit.svg',
+    link: 'https://x.com/y0c0de',
   },
   {
     id: 3,
     img: '/link.svg',
+    link: 'https://www.linkedin.com/in/youcef-morsi-a7579a289/',
   },
 ]
