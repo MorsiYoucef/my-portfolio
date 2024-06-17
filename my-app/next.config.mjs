@@ -36,15 +36,15 @@ export default withSentryConfig(nextConfig, {
   // https://vercel.com/docs/cron-jobs
   automaticVercelMonitors: true,
 })
-module.exports = {
-  assetPrefix: './',
-  images: {
-    unoptimized: true,
-  },
-  trailingSlash: true,
-  exportPathMap: async function () {
-    return {
-      '/': { page: '/' },
-    }
-  },
-}
+// module.exports = {
+//   assetPrefix: './',
+//   images: {
+//     unoptimized: true,
+//   },
+//   trailingSlash: true,
+//   exportPathMap: async function () {
+//     return {
+//       '/': { page: '/' },
+//     }
+//   },
+// }

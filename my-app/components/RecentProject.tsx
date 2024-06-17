@@ -50,7 +50,7 @@ const RecentProject = () => {
                     </div>
                   ))}
                 </div>
-                <div className=" flex justify-center items-center">
+                <div className=" flex justify-center items-center gap-2">
                   <p className=" flex lg:text-[15px] md:text-xs text-sm text-purple">
                     Check Live Site
                   </p>
