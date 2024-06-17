@@ -73,7 +73,7 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: 'Travel App',
+    title: '3D Solar System Planets to Explore',
     des: 'Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.',
     img: '/p1.svg',
     iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/fm.svg'],
@@ -81,7 +81,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'University Website',
+    title: 'Yoom - Video Conferencing App',
     des: 'Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.',
     img: '/p2.svg',
     iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/stream.svg', '/c.svg'],
@@ -89,8 +89,8 @@ export const projects = [
   },
   {
     id: 3,
-    title: 'Diet Planner',
-    des: 'A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.',
+    title: 'E-Commerce with Dashboard',
+    des: 'This project is a comprehensive e-commerce platform designed to provide a seamless online shopping experience for users while offering powerful administrative tools for managing and optimizing the website. The solution includes a user-friendly front-end for customers and a robust dashboard for administrators.',
     img: '/p3.svg',
     iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/c.svg'],
     link: 'https://github.com/adrianhajdin/ai_saas_app',

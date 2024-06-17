@@ -1,6 +1,9 @@
 import { FaLocationArrow } from 'react-icons/fa'
 import MagicButton from './ui/MagicButton'
 import { socialMedia } from '@/data'
+import { FaGithub } from 'react-icons/fa'
+import { IoLogoLinkedin } from 'react-icons/io5'
+import { RiTwitterXFill } from 'react-icons/ri'
 
 const Footer = () => {
   return (
@@ -33,18 +36,53 @@ const Footer = () => {
         <p className="md:text-base text-sm md:font-normal font-light  ">
           Copyright © 2024 Yusuf
         </p>
-        <div className=" flex gap-2 items-center md:gap-3 ">
-          {socialMedia.map((profile) => (
-            <a href={profile.link} key={profile.id} className=" cursor-pointer">
+        <div className=" flex gap-10 items-center mt-4 cursor-pointer  ">
+          <a
+            href="https://github.com/MorsiYoucef/"
+            target="blank"
+            className=" cursor-pointer"
+          >
+            <FaGithub size={30} />
+          </a>
+          <a
+            href="https://github.com/MorsiYoucef/"
+            target="blank"
+            className=" cursor-pointer"
+          >
+            <IoLogoLinkedin size={30} />
+          </a>
+          <a
+            href="https://github.com/MorsiYoucef/"
+            target="blank"
+            className=" cursor-pointer"
+          >
+            <RiTwitterXFill size={30} />
+          </a>
+
+          {/* <a href="https://github.com/MorsiYoucef/" className=" cursor-help">
+            <img
+              src="/git.svg"
+              alt="social-media-icon"
+              className=" cursor-pointer"
+              width={30}
+              height={30}
+            />
+          </a> */}
+          {/* {socialMedia.map((profile) => (
+            <div
+              // href={profile.link}
+              key={profile.id}
+              className=" cursor-pointer flex justify-center mx-2 items-center"
+            >
               <img
                 src={profile.img}
-                alt={profile.img}
+                alt="social-media-icon"
                 className=" cursor-pointer"
                 width={30}
                 height={30}
               />
-            </a>
-          ))}
+            </div>
+          ))} */}
         </div>
       </div>
     </footer>
