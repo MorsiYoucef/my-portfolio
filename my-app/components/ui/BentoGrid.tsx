@@ -5,7 +5,7 @@ import { BackgroundGradientAnimation } from './BackgroundGradientAnimation'
 import { GridGlob } from './GridGlob'
 import { FcCheckmark } from 'react-icons/fc'
 import { useState } from 'react'
-import animationData from '@/data/confetti.json'
+
 import MagicButton from './MagicButton'
 import { IoCopyOutline } from 'react-icons/io5'
 
