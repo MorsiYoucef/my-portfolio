@@ -117,7 +117,7 @@ export const BentoGridItem = ({
             ))}
           </div>
           <div className=" flex flex-col relative bottom-8 gap-5 lg:gap-5 ">
-            {['Express.js', 'GraphQl', ' WordPress'].map((item) => (
+            {['Express.js', 'Three.js', ' WordPress'].map((item) => (
               <span
                 key={item}
                 className=" py-3 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]  "
